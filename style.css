@@ -1,0 +1,421 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container عام */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header p {
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.header p:hover {
+  background-color: yellow;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header .links a {
+  padding: 7px 19px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+.header .links li:hover a {
+  color: white;
+}
+
+.links img {
+  width: 25px;
+  height: 25px;
+}
+
+.links li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.links li:hover {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.links li:hover img {
+  filter: invert(100%);
+}
+
+/* Hero */
+.hero .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.personalImg img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.cont {
+  flex: 1;
+  padding: 20px;
+}
+
+.cont h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.cont p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.cont a.menu-item {
+  border: 2px solid blue;
+  background-color: white;
+  color: blue;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Skills */
+.skills {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.skills p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+}
+
+.containerImg ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.containerImg li {
+  transition: transform 0.3s ease;
+}
+
+.containerImg li:hover {
+  transform: scale(1.1);
+}
+
+.skills img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Testimony */
+.testimony {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.testimony h2 {
+  font-size: 36px;
+  position: relative;
+  right: 400px;
+  top: 30px;
+}
+
+.testimony h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  position: relative;
+  right: 400px;
+}
+
+.testimony h4 {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 10px;
+  position: relative;
+  right: 400px;
+  bottom: 10px;
+}
+
+.testimony p {
+  position: relative;
+  bottom: 250px;
+  left: 700px;
+  max-width: 700px;
+  margin: -10px -64px;
+  font-size: 19px;
+}
+
+.containerr img {
+  margin-top: 30px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: relative;
+  right: 400px;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  position: relative;
+  right: 465px;
+}
+
+.contact p {
+  position: relative;
+  left: -196px;
+  max-width: 700px;
+  margin: 0px auto;
+  font-size: 19px;
+}
+
+.contact label {
+  position: relative;
+  left: 520px;
+  bottom: 120px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 75%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  position: relative;
+  left: 520px;
+  bottom: 120px;
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 20px 200px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 520px;
+  bottom: 120px;
+  width: 450px;
+}
+
+textarea {
+  width: 450px;
+  height: 150px;
+  resize: both;
+}
+
+
+/* Start Responsive */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: baseline;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .header ul {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .links li {
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .links img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .header p {
+    font-size: 18px;
+    position: fixed;
+  }
+
+  .hero .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .personalImg img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 303px;
+  }
+
+  .cont {
+    padding: 0 10px;
+  }
+
+  .cont h1 {
+    font-size: 28px;
+    position: relative;
+    top: 257px;
+    right: 84px;
+  }
+
+  .cont p {
+    font-size: 16px;
+    margin: 10px 0;
+    position: relative;
+    top: 250px;
+  }
+
+  .cont a.menu-item {
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 15px;
+    position: relative;
+    top: 260px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .links li {
+    flex-direction: column;
+    align-items: baseline;
+    text-align: center;
+    gap: 0px;
+    position: relative;
+    left: 175px;
+  }
+
+  .testimony h2,
+  .testimony h5,
+  .tistimony h4,
+  .testimony p,
+  .containerr img {
+    position: static;
+    text-align: center;
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact h2,
+  .contact p,
+  .contact label,
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  input[type="submit"] {
+    position: static;
+    width: 100%;
+    left: auto;
+    bottom: auto;
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+
+  .containerImg ul {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .skills img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header .links a {
+    display: none;
+  }
+}
+
+/* End Responsive */
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
